@@ -12,7 +12,7 @@
         content="https://th.bing.com/th/id/OIP.6NQq_Z1Qp3ORWEOss6F_7AHaE6?pid=ImgDet&w=180&h=180&c=7&dpr=1.2">
     <meta property="og:url" content="https://lisbet-dokcom.github.io/wdd231/chamber/index.html">
     <title>Chamber - Home Page</title>
-    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/main.mjs" defer></script>
     <!-- <script src="scripts/index.js" defer></script> -->
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/mobileview.css">
@@ -46,7 +46,25 @@
         </div>
         <section>
             <div id="games">
-                <h3>Recent Games</h3>
+                <div class="main">
+                    <table>
+                        <th colspan="5">
+                            Recent Games
+                        </th>
+                        <tr>
+                            <th>Day</th>
+                            <th>Date</th>
+                            <th>Away Team</th>
+                            <th>Home Team</th>
+                            <th>Time</th>
+                        </tr>
+
+                        <!-- JS will insert rows here 
+                         new Intl.DateTimeFormat('en-US', {
+    dateStyle: 'full',
+    timeStyle: 'short'-->
+                    </table>
+                </div>
             </div>
             <div id="preview">
                 <h3>Player Stats Preview</h3>
@@ -63,7 +81,9 @@
             <a href="player-stats.html">Player Stats</a>
             <a href="games.html">Games</a>
             <a href="about.html">About</a>
-            <p>©<span id="currentyear"></span> Ultimate Basketball Track</p>
+            <a href="">Highlight</a>
+        </div>
+        <p>©<span id="currentyear"></span> Ultimate Basketball Track</p>
     </footer>
 </body>
 
