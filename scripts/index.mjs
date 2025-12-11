@@ -68,7 +68,8 @@ async function apiFectch() {
 //     }
 // }
 
-const YOUTUBE_API_KEY = "AIzaSyDU-bfCgQaafDprKYScSNi4VCOx6OcdwoY";
+// const YOUTUBE_API_KEY = "AIzaSyDU-bfCgQaafDprKYScSNi4VCOx6OcdwoY";
+const YOUTUBE_API_KEY = "AIzaSyDsHcXEv72DOL5AlpXzxhvcfRM2TNF3MJE";
 const highlightContainer = document.getElementById("highlight");
 
 
