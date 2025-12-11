@@ -1,9 +1,102 @@
+/* --- Mobile / Responsive Styles (Merged) --- */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .head-links {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .head-links a {
+        padding: 8px 12px;
+        margin: 3px;
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        height: 300px;
+    }
+
+    .hero a {
+        font-size: 16px;
+        bottom: 10%;
+    }
+
+    /* Tables: make scrollable horizontally */
+    table {
+        display: block;
+        overflow-x: auto;
+        font-size: 0.9rem;
+    }
+
+    /* Video / Live game cards adjustments */
+    #highlight .video-card,
+    .live-game-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Highlight section padding */
+    #highlight {
+        padding: 15px;
+    }
+
+    .nice h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    /* About section adjustments */
+    .about {
+        padding: 25px 15px;
+    }
+
+    /* Contact form adjustments */
+    .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        font-size: 0.95rem;
+    }
+
+    .contact-form input[type="submit"] {
+        font-size: 0.95rem;
+    }
+
+    /* Buttons scaling */
+    button,
+    .hero a,
+    .contact-form input[type="submit"] {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust container gap */
+    .container {
+        gap: 12px;
+    }
+}
+
+/* --- Extra Small Devices / Phones --- */
 @media (max-width: 640px) {
     main {
         max-width: 500px;
         margin: 0 auto;
     }
 
+    /* Hamburger Menu */
     #menu {
         display: block;
         font-size: 2rem;
@@ -62,20 +155,56 @@
         border: none;
     }
 
+    /* Cards */
+    #highlight .video-card,
+    .live-game-card {
+        width: 95%;
+        margin: 8px auto;
+    }
 
-    @media (max-width: 600px) {
+    /* Hero */
+    .hero {
+        height: 220px;
+    }
 
-        #games,
-        #viewPlayers {
-            padding: 1rem;
-        }
+    .hero a {
+        font-size: 14px;
+    }
 
-        #games table th,
-        #games table td,
-        #viewPlayers table th,
-        #viewPlayers table td {
-            font-size: 0.85rem;
-            padding: 8px;
-        }
+    /* About */
+    .about {
+        padding: 20px 10px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 15px;
+    }
+
+    /* Highlight title */
+    .nice h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Buttons */
+    button,
+    .hero a,
+    .contact-form input[type="submit"] {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    /* Tables */
+    #games table th,
+    #games table td,
+    #viewPlayers table th,
+    #viewPlayers table td {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    /* Container gap */
+    .container {
+        gap: 10px;
     }
 }

@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             if (res.ok) {
                 const showResult = await res.json();
-                console.log("Players data:", showResult);
+                // console.log("Players data:", showResult);
                 // Process your players data here
 
                 pageNumber.textContent = `Page ${currentPage}`;

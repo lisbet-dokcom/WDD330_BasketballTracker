@@ -13,6 +13,7 @@
     <title>Ultimate Basketball Tracker - Player Stats Page</title>
     <script type="module" src="scripts/main.js" defer></script>
     <script type="module" src="scripts/players.js" defer></script>
+    <script src="scripts/players-stats.js"></script>
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/mobileview.css">
     <link rel="icon" href="images/favicon.ico">
@@ -47,6 +48,29 @@
             </button>
             <img class="my-cover" src="images/yoad-shejtman-r0Elo6o_sLU-unsplash.jpg" alt="">
         </div>
+
+        <div id="player-stats">
+            <table>
+                <thead>
+                    <th colspan="8">
+                        Player Season Stats - by Player </th>
+                    <tr>
+                        <th>Player</th>
+                        <th>Team</th>
+                        <th>Points</th>
+                        <th>Rebounds</th>
+                        <th>Assists</th>
+                        <th>Steals</th>
+                        <th>Blocks</th>
+                        <th>Games Played</th>
+                    </tr>
+                </thead>
+                <tbody id="stats-table">
+                    <!-- Player stats will go here -->
+                </tbody>
+            </table>
+        </div>
+
 
     </main>
     <footer>

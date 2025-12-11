@@ -1,12 +1,6 @@
-
-
-
 //Fetch API
 
-export const myKey = "f5274ffe-a315-419e-b35a-7dfd9e01dfb6";
-const preview = document.getElementById("preview");
-const showGames = document.querySelector("#games");
-
+const myKey = "f5274ffe-a315-419e-b35a-7dfd9e01dfb6";
 
 async function apiFectch() {
     const today = new Date().toISOString().split("T")[0];
@@ -20,7 +14,7 @@ async function apiFectch() {
         });
         if (response.ok) {
             const info = await response.json();
-            console.log(info);
+            // console.log(info);
 
             const shuffled = info.data.sort(() => 0.5 - Math.random());
             const selected = shuffled.slice(0, 4);
@@ -83,7 +77,7 @@ async function loadHighlights() {
         if (!res.ok) throw new Error("YouTube API error");
 
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
 
         highlightContainer.innerHTML = ""; // clear old results
 
@@ -113,8 +107,78 @@ async function loadHighlights() {
     }
 }
 
+
+const newkey = "ba2f872c6271439f95dc05a1cd5ce34e";
+
+// Format date as YYYY-MM-DD for the API
+function getYesterdayDate() {
+    const today = new Date();
+    today.setDate(today.getDate() - 1); // subtract 1 day
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, "0"); // months start at 0
+    const day = String(today.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+}
+
+const yesterday = getYesterdayDate();
+
+async function getPlayerGameStats() {
+    const api = `https://api.sportsdata.io/v3/nba/stats/json/PlayerGameStatsByDate/${yesterday}?key=${newkey}`;
+
+    try {
+        const res = await fetch(api);
+        if (!res.ok) throw Error(await res.text());
+
+        const data = await res.json();
+        // console.log(data); // Check API response
+
+        displayPlayerGameStats(data);
+    } catch (error) {
+        console.log("API ERROR:", error);
+    }
+}
+
+function displayPlayerGameStats(players) {
+    const tableBody = document.getElementById("game-stats-table");
+    tableBody.innerHTML = ""; // Clear previous data
+
+
+    if (players.length === 0) {
+        tableBody.innerHTML = '<tr><td colspan="7">No games played yesterday</td></tr>';
+        return;
+    }
+
+    // Sort players alphabetically
+    players.sort((a, b) => a.Name.localeCompare(b.Name));
+
+    // Take only top 10 players
+    const topTen = players.slice(0, 10);
+
+
+    topTen.forEach(player => {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+            <td>${player.Name}</td>
+            <td>${player.Team}</td>
+            <td>${player.Points}</td>
+            <td>${player.Rebounds}</td>
+            <td>${player.Assists}</td>
+            <td>${player.Turnovers}</td>
+            <td>${player.Minutes}</td>
+        `;
+
+        tableBody.appendChild(row);
+    });
+}
+
+// Call the function
+
+
 apiFectch();
 loadHighlights();
+getPlayerGameStats();
+
 
 
 
