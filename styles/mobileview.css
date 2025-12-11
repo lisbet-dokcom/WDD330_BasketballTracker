@@ -61,4 +61,21 @@
         color: #ffc72c;
         border: none;
     }
+
+
+    @media (max-width: 600px) {
+
+        #games,
+        #viewPlayers {
+            padding: 1rem;
+        }
+
+        #games table th,
+        #games table td,
+        #viewPlayers table th,
+        #viewPlayers table td {
+            font-size: 0.85rem;
+            padding: 8px;
+        }
+    }
 }

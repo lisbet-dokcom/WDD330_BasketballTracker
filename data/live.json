@@ -1,0 +1,139 @@
+[
+    {
+        "id": 1,
+        "name": "ESPN",
+        "url": "https://www.espn.com/watch/",
+        "subscription": "Paid",
+        "country": "USA",
+        "device_support": [
+            "Web",
+            "iOS",
+            "Android",
+            "Smart TV"
+        ],
+        "quality": "HD",
+        "free_trial": "No",
+        "notes": "Official broadcaster of NBA games. Requires cable subscription or ESPN+ subscription."
+    },
+    {
+        "id": 2,
+        "name": "NBA League Pass",
+        "url": "https://www.nba.com/leaguepass",
+        "subscription": "Paid",
+        "country": "Global",
+        "device_support": [
+            "Web",
+            "iOS",
+            "Android",
+            "Smart TV",
+            "Xbox",
+            "PlayStation"
+        ],
+        "quality": "Full HD / 4K available",
+        "free_trial": "Yes, limited period",
+        "notes": "Official NBA streaming service. Offers full-season access and team-specific packages."
+    },
+    {
+        "id": 3,
+        "name": "YouTube TV",
+        "url": "https://tv.youtube.com/",
+        "subscription": "Paid",
+        "country": "USA",
+        "device_support": [
+            "Web",
+            "iOS",
+            "Android",
+            "Smart TV",
+            "Chromecast"
+        ],
+        "quality": "HD",
+        "free_trial": "Yes, 7 days",
+        "notes": "Carries channels like ESPN and TNT that broadcast NBA games live."
+    },
+    {
+        "id": 4,
+        "name": "FuboTV",
+        "url": "https://www.fubo.tv/",
+        "subscription": "Paid",
+        "country": "USA, Canada",
+        "device_support": [
+            "Web",
+            "iOS",
+            "Android",
+            "Smart TV",
+            "Apple TV",
+            "Roku"
+        ],
+        "quality": "HD / 4K available",
+        "free_trial": "Yes, 7 days",
+        "notes": "Streaming service that includes NBA broadcasters like ESPN, TNT, and NBA TV."
+    },
+    {
+        "id": 5,
+        "name": "Sling TV",
+        "url": "https://www.sling.com/",
+        "subscription": "Paid",
+        "country": "USA",
+        "device_support": [
+            "Web",
+            "iOS",
+            "Android",
+            "Smart TV",
+            "Roku",
+            "Apple TV"
+        ],
+        "quality": "HD",
+        "free_trial": "Yes, limited",
+        "notes": "Budget-friendly live TV streaming service. Offers NBA channels depending on package."
+    },
+    {
+        "id": 6,
+        "name": "Hulu + Live TV",
+        "url": "https://www.hulu.com/live-tv",
+        "subscription": "Paid",
+        "country": "USA",
+        "device_support": [
+            "Web",
+            "iOS",
+            "Android",
+            "Smart TV",
+            "Roku",
+            "Fire TV"
+        ],
+        "quality": "HD",
+        "free_trial": "Yes, 7 days",
+        "notes": "Live TV streaming service including ESPN, TNT, and NBA TV."
+    },
+    {
+        "id": 7,
+        "name": "ABC",
+        "url": "https://abc.com/watch-live",
+        "subscription": "Free / Paid",
+        "country": "USA",
+        "device_support": [
+            "Web",
+            "iOS",
+            "Android",
+            "Smart TV"
+        ],
+        "quality": "HD",
+        "free_trial": "Free",
+        "notes": "Select NBA games broadcast nationally for free. Requires TV provider login for full access."
+    },
+    {
+        "id": 8,
+        "name": "TNT",
+        "url": "https://www.tntdrama.com/watch-tnt",
+        "subscription": "Paid",
+        "country": "USA",
+        "device_support": [
+            "Web",
+            "iOS",
+            "Android",
+            "Smart TV"
+        ],
+        "quality": "HD",
+        "free_trial": "Depends on TV provider",
+        "notes": "National NBA broadcaster. Some games require TV subscription login."
+    }
+]

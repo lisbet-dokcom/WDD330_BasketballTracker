@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber | WDD 231 | Home Page">
+    <meta name="description" content="Baskball Tracker | WDD 330 | Home Page">
     <meta name="author" content="Elizabeth">
     <meta property="og:title" content="Ultimate Basketball Tracks">
     <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://th.bing.com/th/id/OIP.6NQq_Z1Qp3ORWEOss6F_7AHaE6?pid=ImgDet&w=180&h=180&c=7&dpr=1.2">
-    <meta property="og:url" content="https://lisbet-dokcom.github.io/wdd231/chamber/index.html">
-    <title>Chamber - Home Page</title>
-    <script type="module" src="scripts/main.mjs" defer></script>
-    <!-- <script src="scripts/index.js" defer></script> -->
+    <meta property="og:image" content="images/images/tj-dragotta-Gl0jBJJTDWs-unsplash.jpg">
+    <meta property="og:url" content="https://lisbet-dokcom.github.io/WDD330_BasketballTracker/index.html">
+    <title>Ultimate Basketball Tracker - Home Page</title>
+    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/index.mjs" defer></script>
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/mobileview.css">
+    <link rel="icon" href="images/favicon.ico">
     <!-- <link rel="stylesheet" href="styles/directory-small.css">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="icon" href="images/favicon.ico">
@@ -46,25 +46,18 @@
         </div>
         <section>
             <div id="games">
-                <div class="main">
-                    <table>
-                        <th colspan="5">
-                            Recent Games
-                        </th>
-                        <tr>
-                            <th>Day</th>
-                            <th>Date</th>
-                            <th>Away Team</th>
-                            <th>Home Team</th>
-                            <th>Time</th>
-                        </tr>
-
-                        <!-- JS will insert rows here 
-                         new Intl.DateTimeFormat('en-US', {
-    dateStyle: 'full',
-    timeStyle: 'short'-->
-                    </table>
-                </div>
+                <table>
+                    <th colspan="5">
+                        Recent Games
+                    </th>
+                    <tr>
+                        <th>Day</th>
+                        <th>Date</th>
+                        <th>Away Team</th>
+                        <th>Home Team</th>
+                        <th>Time</th>
+                    </tr>
+                </table>
             </div>
             <div id="preview">
                 <h3>Player Stats Preview</h3>
@@ -81,7 +74,7 @@
             <a href="player-stats.html">Player Stats</a>
             <a href="games.html">Games</a>
             <a href="about.html">About</a>
-            <a href="">Highlight</a>
+            <a href="live.html">Live</a>
         </div>
         <p>©<span id="currentyear"></span> Ultimate Basketball Track</p>
     </footer>

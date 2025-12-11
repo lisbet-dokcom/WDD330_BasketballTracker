@@ -4,17 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Basketball Tracker | WDD 330 | Player Stats Page">
+    <meta name="description" content="Baskball Tracker | WDD 330 | Player Stats Page">
     <meta name="author" content="Elizabeth">
     <meta property="og:title" content="Ultimate Basketball Tracks">
     <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://th.bing.com/th/id/OIP.6NQq_Z1Qp3ORWEOss6F_7AHaE6?pid=ImgDet&w=180&h=180&c=7&dpr=1.2">
-    <meta property="og:url" content="https://lisbet-dokcom.github.io/wdd231/chamber/index.html">
-    <title>Chamber - Home Page</title>
+    <meta property="og:image" content="images/images/tj-dragotta-Gl0jBJJTDWs-unsplash.jpg">
+    <meta property="og:url" content="https://lisbet-dokcom.github.io/WDD330_BasketballTracker/player-stats.html">
+    <title>Ultimate Basketball Tracker - Player Stats Page</title>
+    <script type="module" src="scripts/main.js" defer></script>
     <script type="module" src="scripts/players.js" defer></script>
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/mobileview.css">
+    <link rel="icon" href="images/favicon.ico">
+
     <!-- <link rel="stylesheet" href="styles/directory-small.css">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="icon" href="images/favicon.ico">
@@ -39,9 +41,13 @@
         </nav>
     </header>
     <main>
-        <button id="playersbtn" class="view-players-btn">
-            See Players
-        </button>
+        <div class="hero">
+            <button id="playersbtn" class="view-players-btn">
+                See Players
+            </button>
+            <img class="my-cover" src="images/yoad-shejtman-r0Elo6o_sLU-unsplash.jpg" alt="">
+        </div>
+
     </main>
     <footer>
         <div class="foot-links">
@@ -49,7 +55,7 @@
             <a href="player-stats.html">Player Stats</a>
             <a href="games.html">Games</a>
             <a href="about.html">About</a>
-            <a href="">Highlight</a>
+            <a href="live.html">Live</a>
         </div>
         <p>©<span id="currentyear"></span> Ultimate Basketball Track</p>
     </footer>
