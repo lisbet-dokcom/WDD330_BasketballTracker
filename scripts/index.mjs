@@ -95,6 +95,7 @@ async function loadHighlights() {
             videoCard.classList.add("video-card");
 
             videoCard.innerHTML = `
+            
                 <iframe 
                     src="https://www.youtube.com/embed/${videoId}"
                     frameborder="0"
