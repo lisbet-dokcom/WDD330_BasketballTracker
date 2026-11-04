@@ -34,12 +34,13 @@ async function apiFectch() {
                 })}</td>
                     <td>${game.visitor_team.name}</td>
                     <td>${game.home_team.name}</td>
-                <td>${gameDate.toLocaleTimeString('en-US', {
+                <td>${new Date(game.datetime).toLocaleTimeString('en-US', {
                     hour: '2-digit',
                     minute: '2-digit',
                     timeZone: 'Africa/Lagos',
                     hour12: true
                 })} WAT</td>
+                
                     
                 `;
                 table.appendChild(row);
