@@ -16,8 +16,9 @@ async function apiFectch() {
             const info = await response.json();
             // console.log(info);
 
-            const shuffled = info.data.sort(() => 0.5 - Math.random());
-            const selected = shuffled.slice(0, 4);
+           // const shuffled = info.data.sort(() => 0.5 - Math.random());
+           // const selected = shuffled.slice(0, 4);
+            const selected = info.data;
 
             const table = document.querySelector("#games table");
 
