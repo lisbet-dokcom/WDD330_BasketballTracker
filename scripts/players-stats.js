@@ -25,7 +25,9 @@ const newkey = "ba2f872c6271439f95dc05a1cd5ce34e";
 
 // Set the season (NBA seasons start in October)
  // const season = 2026;
-const season = new Date().getFullYear();
+// const season = new Date().getFullYear();
+
+const season = 2027;
 
 async function getPlayerSeasonStats() {
     const api = `https://api.sportsdata.io/v3/nba/stats/json/PlayerSeasonStats/${season}?key=${newkey}`;
