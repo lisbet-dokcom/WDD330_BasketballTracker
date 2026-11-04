@@ -151,7 +151,8 @@ function displayPlayerGameStats(players) {
     }
 
     // Sort players alphabetically
-    players.sort((a, b) => a.Name.localeCompare(b.Name));
+    players.sort((a, b) => b.Points - a.Points);
+  //  players.sort((a, b) => a.Name.localeCompare(b.Name));
 
     // Take only top 10 players
     const topTen = players.slice(0, 10);
