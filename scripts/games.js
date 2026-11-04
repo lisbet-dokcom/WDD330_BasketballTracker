@@ -26,7 +26,8 @@ function displayGames(games) {
 
     games.forEach((game) => {
         const row = document.createElement('tr');
-        const gameDate = new Date(game.datetime);
+        const gameDate = new Data(game.date);
+        const gameTime = new Date(game.datetime);
 
         // Convert UTC → Lagos time
         const localTime = new Intl.DateTimeFormat('en-US', {
