@@ -26,7 +26,7 @@ function displayGames(games) {
 
     games.forEach((game) => {
         const row = document.createElement('tr');
-        const gameDate = new Date(game.date);
+        const gameDate = new Date(game.datetime);
 
         // Convert UTC → Lagos time
         const localTime = new Intl.DateTimeFormat('en-US', {
@@ -34,7 +34,8 @@ function displayGames(games) {
             minute: '2-digit',
             timeZone: 'Africa/Lagos',
             hour12: true
-        }).format(gameDate);
+        }).format(gameTime);
+
 
         row.innerHTML = `
             <td>${gameDate.toLocaleDateString('en-US', { weekday: 'short' })}</td>
